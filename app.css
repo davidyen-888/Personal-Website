@@ -1,12 +1,13 @@
-
-
 body {
-    background: #0f1b35;
+    background: #b6dde7ad;
     font-family: "Nunito", sans-serif;
 }
 
-body .navbar-brand{
+.navbar-brand {
     font-size: 2rem;
+}
+#mainNavbar{
+    background-color: #0c1529;
 }
 
 #mainNavbar .nav-link {
@@ -15,8 +16,7 @@ body .navbar-brand{
     transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
-#mainNavbar #navLinks{
-    background-color: #0f1b35b4;
+#mainNavbar #navLinks {
     text-align: center;
 }
 
@@ -27,16 +27,36 @@ body .navbar-brand{
     cursor: pointer;
 }
 
-.container {
-    height: 300px;
-    background-color: #b6dde7ad;
+.home-container {
+    height: 700px;
+    background-color: #0f1b35;;
     padding: 10px;
-    margin: Auto;
-    margin-top: 4rem;
-    max-width: 1000px;
-    color: white;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: 2rem;
+    align-items: center;
+}
+
+.home-container p {
+    color: rgb(224, 98, 98);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.about-container {
+    height: 700px;
+}
+
+.about-container h1 {
+    color: rgb(224, 98, 98);
+    margin: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.about-container div {
+    text-align: start;
+    font-size: 1.5rem;
+    padding: 10px;
 }
