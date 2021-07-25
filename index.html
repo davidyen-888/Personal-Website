@@ -24,7 +24,7 @@
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="#header" class="navbar-brand">DAVID HSIEH</a>
+        <a href="#home" class="navbar-brand">DAVID HSIEH</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +43,7 @@
                     <a href="#" class="nav-link">CV</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">CONTACT</a>
+                    <a href="https://www.google.com" class="nav-link">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -58,16 +58,31 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="about-container">
-        <div class="about-content">
-            <h1>ABOUT ME</h1>
-            <div>
-                I am currently a master student in<a href="https://cse.ucsd.edu/"> Computer Science and Engineering, UC San Diego</a>.
+    <section id="about" class="section-content col">
+        <h1>ABOUT ME</h1>
+        <div class="about-content row align-items-center">
+            <div class="col-6 order-1 about-content-left">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Hello! I 'm David, currently a master student in<a href="https://cse.ucsd.edu/"> Computer
+                                Science and Engineering, UC San Diego</a>.
+                        </p>
+                        <p>
+                            As a self-taught developer, I am always looking for new challenges and enjoys solving them.
+                            I would love to work in a team among developers and I am always open to new ideas.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                As a self-taught developer, I am always looking for new challenges and enjoys solving them. 
-                I would love to work in a team among developers and I am always open to new ideas.
+            <div class="col-6 order-2 about-content-right">
+                <img class="about-picture" src="images/me.jpg" alt="">
+                <p>While I am not coding, I love shooting photos, listening to 70's rock/classical music and going
+                    outdoors. </p>
             </div>
+        </div>
+    </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
