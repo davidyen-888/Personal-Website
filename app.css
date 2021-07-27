@@ -64,7 +64,7 @@ body {
     line-height: 2.5rem;
 }
 
-.about-content-right p{
+.about-content-right p {
     text-align: center;
     margin-top: 2rem;
     background-color: #3463460e;
@@ -80,4 +80,8 @@ body {
     min-width: 50%;
     border-radius: 50%;
     box-shadow: #346346b4 0px 3px 10px 3px;
+}
+
+.pm25-picture, .bot-picture {
+    max-width: 100%;
 }
