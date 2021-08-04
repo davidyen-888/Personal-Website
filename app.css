@@ -1,5 +1,6 @@
 body {
     font-family: "Nunito", sans-serif;
+    background-color: #ffe2bd21;
 }
 
 .navbar-brand {
@@ -89,7 +90,6 @@ body {
 
 #contact {
     text-align: center;
-    min-height: max-content;
 }
 
 .footer-link {
