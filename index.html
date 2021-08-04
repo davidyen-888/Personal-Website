@@ -40,9 +40,6 @@
                     <a href="#projects" class="nav-link">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#cv" class="nav-link">CV</a>
-                </li>
-                <li class="nav-item">
                     <a href="#contact" class="nav-link">CONTACT</a>
                 </li>
             </ul>
@@ -71,15 +68,18 @@
                         <p>
                             As a self-taught developer, I am always open to new ideas, looking for new challenges and
                             enjoys solving them.
-                            I am capable of learning new skills what my job needed in the fast pace, being a learner and
-                            contributor in every position.
+                        </p>
+                        <p>
+                            I am also capable of learning new skills what my job needed in the fast pace. My goal is to
+                            be a learner and
+                            contributor in every position, especially in the field of frontend development.
                         </p>
                         <br>
                         <h3><strong>Skills</strong></h3>
                         <ul>
                             <li>
                                 <p>
-                                    h <strong>Web Development</strong>
+                                    <strong>Web Development</strong>
                                     <br>
                                     <em>
                                         HTML5, CSS3, JavaScript(ES6)
@@ -110,7 +110,7 @@
             </div>
             <div class="col-6 order-2 about-content-right">
                 <img class="about-picture" src="images/me.jpg" alt="">
-                <p>Besides coding, I love shooting photos, listening to 70's rock/classical music and going
+                <p>Besides coding, I love shooting photos, listening to 70's rock/classical music, and going
                     outdoors! </p>
             </div>
         </div>
@@ -169,7 +169,8 @@
                             <h2>PM 2.5 Detector</h2>
                         </a>
                         <p>
-                            An <b>Android application</b> connected with Arduino air quality sensor by Bluetooth.
+                            An <b>Android application</b> connected with Arduino air quality sensor(PMS3003) by
+                            bluetooth module.
                         </p>
                         <p>
                             Users can detect the PM 2.5 level of the their environment without connecting
@@ -235,11 +236,12 @@
             <div class="col-6 order-1 projects-content-left">
                 <div class="row">
                     <div class="col">
-                        <a href="https://www.youtube.com/watch?v=nG5KKAlwMCc&t=1s">
+                        <a href="https://github.com/davidyen-888/Discord-Weather-Bot">
                             <h2>Weather Bot</h2>
                         </a>
                         <p>
-                            An online discord bot coded with Python that can access user's concurrent weather, anytime,
+                            An online discord bot coded with Python and hosted on Heroku that can access user's
+                            concurrent weather, anytime,
                             anywhere.
                         </p>
                     </div>
@@ -251,6 +253,22 @@
                     alt="">
             </div>
         </div>
+    </section>
+    <section id="contact" class="section-content col">
+        <h1>CONTACT</h1>
+        <div>
+            <h5>Find Me On:</h5>
+        </div>
+        <div>
+            <a class="footer-link" href="https://github.com/davidyen-888" target="_blank"
+                aria-label="link to github profile"><i class="fab fa-github-square"></i></a>
+            <a class="footer-link" href="https://www.linkedin.com/in/david-hsieh-712648140/" target="_blank"
+                aria-label="link to linkedIn profile"><i class="fab fa-linkedin link"></i></a>
+            <a class="footer-link" href="mailto:syhsieh@ucsd.edu" target="_blank"><i
+                    class="fas fa-envelope-square"></i></a>
+            <a class="footer-link" href="Resume__Hsieh, Sung-Yan.pdf" target="_blank"><i class="fas fa-address-card"></i></a>
+        </div>
+
     </section>
 
     <!-- Optional JavaScript -->
@@ -264,15 +282,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!-- Scrolling effect in JavaScript -->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
+
+    <script src="https://kit.fontawesome.com/ece26f3653.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

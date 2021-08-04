@@ -73,6 +73,7 @@ body {
     font-weight: 800;
     border-radius: 10px;
     min-width: 150px;
+    font-size: 1.1rem;
 }
 
 .about-picture {
@@ -84,4 +85,14 @@ body {
 
 .pm25-picture, .bot-picture {
     max-width: 100%;
+}
+
+#contact {
+    text-align: center;
+    min-height: max-content;
+}
+
+.footer-link {
+    font-size: 2rem;
+    color: #0f1b35;
 }
