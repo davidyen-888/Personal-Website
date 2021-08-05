@@ -52,6 +52,10 @@ body {
     font-weight: 900;
 }
 
+.about-content {
+    margin: 4% 10% 4% 10%;
+}
+
 .about-content-left {
     text-align: start;
     font-size: 1.5rem;
@@ -75,6 +79,32 @@ body {
     border-radius: 10px;
     min-width: 150px;
     font-size: 1.1rem;
+}
+
+.projects-content {
+    margin: 8% 10% 0 10%;
+}
+
+.projects-content h2{
+    font-weight: 900;
+}
+
+.projects-content p {
+    font-size: 1.2rem;
+}
+
+.project-link-group {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.github-project-link, .external-project-link {
+    color: rgba(50, 50, 119, 0.521);
+}
+
+.project-link-group .external-project-link {
+    margin-left: 1rem;
+    font-size: 1.3rem;
 }
 
 .about-picture {
