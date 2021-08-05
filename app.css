@@ -73,7 +73,7 @@ a:hover {
 }
 
 #intro-btn {
-    background-color: #346346b4;
+    background-color: rgba(38, 74, 121, 0.63);
     border: 0px;
     color: white;
     margin: 1rem 0px;
