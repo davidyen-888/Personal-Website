@@ -1,3 +1,8 @@
+html {
+    /* safari unsupported */
+    scroll-behavior: smooth 
+}
+
 body {
     font-family: "Nunito", sans-serif;
     background-color: #ffe2bd21;
@@ -90,25 +95,21 @@ a:hover {
 }
 
 @keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
 }
 
 .section-content h1 {
@@ -134,7 +135,14 @@ a:hover {
     border: 0px;
     color: white;
     margin: 1rem 0px;
-    transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.5s;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1)
 }
 
 #intro-btn:hover {
@@ -165,7 +173,7 @@ a:hover {
 
 #skillset span {
     color: rgb(224, 98, 98);
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .projects-content p {
