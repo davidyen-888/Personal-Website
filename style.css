@@ -189,11 +189,6 @@ a:hover {
     color: rgba(50, 50, 119, 0.521);
 }
 
-.github-project-link:hover, .external-project-link:hover {
-    box-shadow: 0 0.5em 0.5em -0.4em #929292;
-    cursor: pointer;
-}
-
 .project-link-group .external-project-link {
     margin-left: 1rem;
     font-size: 1.3rem;
