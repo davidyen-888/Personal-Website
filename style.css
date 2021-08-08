@@ -123,19 +123,14 @@ a:hover {
 .about-content, .projects-content {
     margin: 4% 10% 4% 10%;
     display: flex;
-    flex-direction: row;
+    flex-direction: block;
     justify-content: space-around;
 }
 
-.about-content-left, .projects-content-left, .about-content-right, .projects-content-right {
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 30px 50px;
-    line-height: 2.5rem;
-}
-
-.about-content-left{
+.about-content-left, .projects-content {
     text-align: start;
+    line-height: 2.5rem;
+    justify-content: center;
 }
 
 #intro-btn {
@@ -165,8 +160,15 @@ a:hover {
     padding: 20px;
 }
 
+.about-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .about-picture {
-    max-width: 350px;
+    max-width: 300px;
     min-width: 50%;
     border-radius: 50%;
     box-shadow: #346346b4 0px 3px 10px 3px;
@@ -174,6 +176,7 @@ a:hover {
 
 .projects-content h2 {
     font-weight: 900;
+    text-align: center;
 }
 
 #skillset span {
@@ -181,13 +184,10 @@ a:hover {
     margin: 0.5rem;
 }
 
-.projects-content p {
-    font-size: 1.2rem;
-}
-
 .project-link-group {
     margin: 10px 0;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .github-project-link, .external-project-link, .footer-link {
@@ -214,7 +214,10 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-    .about-content, .projects-content {
-        margin: 0%;
+    .home-container p {
+        font-size: 2rem;
+    }
+    .about-content-left, .projects-content {
+        text-align: start;
     }
 }
