@@ -155,9 +155,17 @@ a:hover {
     cursor: pointer;
 }
 
-.card-body {
+.card-body, .skills-content {
     background-color: #f5ebdf83;
     padding: 20px;
+    border-radius: 50px;
+    border: 0px;
+    width: 60%;
+}
+
+#skills{
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 
 .about-content-right {
@@ -179,9 +187,20 @@ a:hover {
     text-align: center;
 }
 
-#skillset span {
+.projects-content .project-intro {
+    background-color: #f5ebdf83;
+    padding: 2rem;
+    border-radius: 50px;
+}
+
+#skillset {
     color: rgb(224, 98, 98);
-    margin: 0.5rem;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+#skillset span {
+    margin: 0.2rem;
 }
 
 .project-link-group {
@@ -216,8 +235,5 @@ a:hover {
 @media screen and (max-width: 767px) {
     .home-container p {
         font-size: 2rem;
-    }
-    .about-content-left, .projects-content {
-        text-align: start;
     }
 }

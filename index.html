@@ -88,37 +88,39 @@
                         </p>
                     </div>
                 </div>
-                <p>
-                    <strong>Skills</strong>
-                <ul>
-                    <li>
-                        <p>
-                            <strong>Programming Language</strong>
-                            <br>
-                            <em>
-                                JavaScript(ES6), Python, Java
-                            </em>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <strong>Technologies</strong>
-                            <br>
-                            <em>
-                                HTML5, CSS3, Bootstrap, Git
-                            </em>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <strong>Tools</strong>
-                            <br>
-                            <em>
-                                VScode, IntelliJ, Heroku
-                            </em>
-                        </p>
-                    </li>
-                </ul>
+                <p id="skills">
+                Skills
+                <div class="skills-content">
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>Programming Language</strong>
+                                <br>
+                                <em>
+                                    JavaScript(ES6), Python, Java
+                                </em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Technologies</strong>
+                                <br>
+                                <em>
+                                    HTML5, CSS3, Bootstrap, Git
+                                </em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Tools</strong>
+                                <br>
+                                <em>
+                                    VScode, IntelliJ, Heroku
+                                </em>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
                 </p>
             </div>
             <div class="about-content-right">
@@ -138,24 +140,26 @@
                     <a class="external-project-link" href="http://bearmaps-sp19-davidyen.herokuapp.com/map.html"><i
                             class="fas fa-external-link-alt"></i></a>
                 </div>
-                <p>
-                    A web application that resembles the features of Google Map including <b> rastering</b> ,
-                    <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and <b>navigation
-                        direction</b> functions.
-                </p>
-                <p>
-                    Implemented all the backend algorithms by Java with front end code and map data from
-                    <a href="https://www.openstreetmap.org/">OpenStreetMap</a> provided as a base.
-                </p>
-                <p id="skillset">
-
+                <div class="project-intro">
+                    <p>
+                        A web application that resembles the features of Google Map including <b> rastering</b> ,
+                        <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and <b>navigation
+                            direction</b> functions.
+                    </p>
+                    <p>
+                        Implemented all the backend algorithms by Java with front end code and
+                        map data from
+                        <a href="https://www.openstreetmap.org/">OpenStreetMap</a> provided as a base.
+                    </p>
+                </div>
+                <div id="skillset">
                     <span>Java</span>
                     <span>KDTree</span>
                     <span>Priority Queue</span>
                     <span>A* Algorithm</span>
                     <span>Trie</span>
                     <span>Heroku</span>
-                </p>
+                </div>
             </div>
 
             <div>
@@ -191,20 +195,21 @@
                     <a class="github-project-link" href="https://github.com/davidyen-888/UCB-CS61B/tree/master/hw2"><i
                             class="fab fa-github"></i></a>
                 </div>
-                <p>
-                    A percolation system model implemented with <b>Disjoint Sets</b> data structure and
-                    calculate Monte
-                    Carlo simulation to estimate the percolation threshold.
-                </p>
-                <p>
-                    With input files or mouse clicking, the visualizer can animates the results of opening sites
-                    in a percolation system.
-                </p>
-                <p id="skillset">
+                <div class="project-intro">
+                    <p>
+                        A percolation system model implemented with <b>Disjoint Sets</b> data structure and
+                        calculate Monte Carlo simulation to estimate the percolation threshold.
+                    </p>
+                    <p>
+                        With input files or mouse clicking, the visualizer can animates the results of opening sites
+                        in a percolation system.
+                    </p>
+                </div>
+                <div id="skillset">
                     <span>Java</span>
                     <span>Disjoint Set</span>
                     <span>Monte Carlo Simulation</span>
-                </p>
+                </div>
             </div>
             <div>
                 <div id="percolation-carousel" class="carousel slide" data-ride="carousel">
@@ -239,51 +244,57 @@
 
         <div class="projects-content row">
             <div>
-                <h2>Weather Bot</h2>
-                <div class="project-link-group" id="project-link">
-                    <a class="github-project-link" href="https://github.com/davidyen-888/Discord-Weather-Bot"><i
-                            class="fab fa-github"></i></a>
-                </div>
-                <p>
-                    An online discord bot coded with Python and hosted on Heroku. Respond to user's
-                    concurrent weather, anytime, anywhere using OpenWeatherMap API.
-                </p>
-                <p id="skillset">
-                    <span>Python</span>
-                    <span>Discord API</span>
-                    <span>OpenWeatherMap API</span>
-                    <span>Heroku</span>
-                </p>
-            </div>
-            <div>
-                <img class="bot-picture"
-                    src="https://user-images.githubusercontent.com/61106644/124215941-a433d580-db27-11eb-9bdc-87e112f429bc.gif"
-                    alt="">
-            </div>
-        </div>
-
-        <div class="projects-content row">
-            <div>
                 <h2>PM 2.5 Detector</h2>
                 <div class="project-link-group" id="project-link">
                     <a class="github-project-link" href="https://github.com/davidyen-888/PM2.5-Detector"><i
                             class="fab fa-github"></i></a>
                 </div>
-                <p>
-                    An <b>Android application</b> connected with Arduino air quality sensor(PMS3003) by
-                    bluetooth module.
-                    Users can detect the PM 2.5 level of the their environment without connecting
-                    to the Internet.
-                </p>
-                <p id="skillset">
+                <div class="project-intro">
+                    <p>
+                        An <b>Android application</b> connected with Arduino air quality sensor(PMS3003) by
+                        bluetooth module.
+                    </p>
+                    <p>
+                        Users can detect the PM 2.5 level of the their environment without connecting
+                        to the Internet.
+                    </p>
+                </div>
+                <div id="skillset">
                     <span>Java</span>
                     <span>Arduino</span>
                     <span>Android Studio</span>
                     <span>Blender</span>
-                </p>
+                </div>
             </div>
             <div>
                 <img class="pm25-picture" src="images/pm2.5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="projects-content row">
+            <div>
+                <h2>Weather Bot</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="github-project-link" href="https://github.com/davidyen-888/Discord-Weather-Bot"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <div class="project-intro">
+                    <p>
+                        An online discord bot coded with Python and hosted on Heroku. Respond to user's
+                        concurrent weather, anytime, anywhere using OpenWeatherMap API.
+                    </p>
+                </div>
+                <div id="skillset">
+                    <span>Python</span>
+                    <span>Discord API</span>
+                    <span>OpenWeatherMap API</span>
+                    <span>Heroku</span>
+                </div>
+            </div>
+            <div>
+                <img class="bot-picture"
+                    src="https://user-images.githubusercontent.com/61106644/124215941-a433d580-db27-11eb-9bdc-87e112f429bc.gif"
+                    alt="">
             </div>
         </div>
     </section>
