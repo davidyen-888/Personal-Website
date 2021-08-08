@@ -58,113 +58,106 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section-content col">
+    <section id="about" class="section-content">
         <h1>ABOUT ME</h1>
-        <div class="about-content row align-items-center">
-            <div class="col-6 order-1 about-content-left">
-                <div class="row">
-                    <div class="col">
-                        <h3>
-                            <strong>David Hsieh | MSCS@<a href="https://cse.ucsd.edu/">UCSD</a></strong>
-                        </h3>
+        <div class="about-content row">
+            <div class="about-content-left">
+                <h3>
+                    <strong>David Hsieh | MSCS@<a href="https://cse.ucsd.edu/">UCSD</a></strong>
+                </h3>
+                <p>
+                    <a id="intro-btn" class="btn btn-secondary" data-toggle="collapse" href="#collapse-intro"
+                        aria-expanded="false" aria-controls="collapse-intro">
+                        <strong>Learn more</strong>
+                    </a>
+                </p>
+                <div class="collapse" id="collapse-intro">
+                    <div class="card card-body">
                         <p>
-                            <a id="intro-btn" class="btn btn-secondary" data-toggle="collapse" href="#collapse-intro"
-                                aria-expanded="false" aria-controls="collapse-intro">
-                                <strong>Learn more</strong>
-                            </a>
+                            I am currently a CS Master's student focusing on the field of
+                            <b>Human-Computer Interaction</b>.
                         </p>
-                        <div class="collapse" id="collapse-intro">
-                            <div class="card card-body">
-                                <p>
-                                    I am currently a CS Master's student focusing on the field of
-                                    <b>Human-Computer Interaction</b>.
-                                </p>
-                                <p>
-                                    As a self-taught developer, I am always open to new ideas, looking for new
-                                    challenges and enjoys solving them.
-                                </p>
-                                <p>
-                                    I am also capable of learning new skills what my job needed in the fast pace. My
-                                    goal is to be a learner and contributor in every position, especially in the field
-                                    of <b>Frontend-development</b>.
-                                </p>
-                            </div>
-                        </div>
                         <p>
-                            <strong>Skills</strong>
-                        <ul>
-                            <li>
-                                <p>
-                                    <strong>Programming Language</strong>
-                                    <br>
-                                    <em>
-                                        JavaScript(ES6), Python, Java
-                                    </em>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <strong>Technologies</strong>
-                                    <br>
-                                    <em>
-                                        HTML5, CSS3, Bootstrap, Git
-                                    </em>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <strong>Tools</strong>
-                                    <br>
-                                    <em>
-                                        VScode, IntelliJ, Heroku
-                                    </em>
-                                </p>
-                            </li>
-                        </ul>
+                            As a self-taught developer, I am always open to new ideas, looking for new
+                            challenges and enjoys solving them.
+                        </p>
+                        <p>
+                            I am also capable of learning new skills what my job needed in the fast pace. My
+                            goal is to be a learner and contributor in every position, especially in the field
+                            of <b>Frontend-development</b>.
                         </p>
                     </div>
                 </div>
+                <p>
+                    <strong>Skills</strong>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Programming Language</strong>
+                            <br>
+                            <em>
+                                JavaScript(ES6), Python, Java
+                            </em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Technologies</strong>
+                            <br>
+                            <em>
+                                HTML5, CSS3, Bootstrap, Git
+                            </em>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Tools</strong>
+                            <br>
+                            <em>
+                                VScode, IntelliJ, Heroku
+                            </em>
+                        </p>
+                    </li>
+                </ul>
+                </p>
             </div>
-            <div class="col-6 order-2 about-content-right">
+            <div class="about-content-right">
                 <img class="about-picture" src="images/me.jpg" alt="">
             </div>
         </div>
     </section>
     <section id="projects" class="section-content col">
         <h1>PROJECTS</h1>
-        <div class="projects-content row align-items-center">
-            <div class="col-6 order-2 projects-content-right">
-                <div class="row">
-                    <div class="col">
-                        <h2>BearMaps</h2>
-                        <div class="project-link-group" id="project-link">
-                            <a class="github-project-link" href="https://github.com/davidyen-888/bearmaps"><i
-                                    class="fab fa-github"></i></a>
-                            <a class="external-project-link"
-                                href="http://bearmaps-sp19-davidyen.herokuapp.com/map.html"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                        <p>
-                            A web application that resembles the features of Google Map including <b> rastering</b> ,
-                            <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and <b>navigation
-                                direction</b> functions.
-                        </p>
-                        <p>
-                            Implemented all the backend algorithms by Java with front end code and map data from
-                            <a href="https://www.openstreetmap.org/">OpenStreetMap</a> provided as a base.
-                        </p>
-                        <p id="skillset">
-                            <span>Java</span>
-                            <span>KDTree</span>
-                            <span>Priority Queue</span>
-                            <span>A* Algorithm</span>
-                            <span>Trie</span>
-                            <span>Heroku</span>
-                        </p>
-                    </div>
+        <div class="projects-content row">
+            <div class="projects-content-right">
+                <h2>BearMaps</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="github-project-link" href="https://github.com/davidyen-888/bearmaps"><i
+                            class="fab fa-github"></i></a>
+                    <a class="external-project-link" href="http://bearmaps-sp19-davidyen.herokuapp.com/map.html"><i
+                            class="fas fa-external-link-alt"></i></a>
                 </div>
+                <p>
+                    A web application that resembles the features of Google Map including <b> rastering</b> ,
+                    <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and <b>navigation
+                        direction</b> functions.
+                </p>
+                <p>
+                    Implemented all the backend algorithms by Java with front end code and map data from
+                    <a href="https://www.openstreetmap.org/">OpenStreetMap</a> provided as a base.
+                </p>
+                <p id="skillset">
+
+                    <span>Java</span>
+                    <span>KDTree</span>
+                    <span>Priority Queue</span>
+                    <span>A* Algorithm</span>
+                    <span>Trie</span>
+                    <span>Heroku</span>
+                </p>
             </div>
-            <div class="col-6 order-1 projects-content-left">
+
+            <div class="projects-content-left">
                 <div id="bearmap-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -189,64 +182,55 @@
                 </div>
             </div>
         </div>
-        <div class="projects-content row align-items-center">
-            <div class="col-6 order-1 projects-content-left">
-                <div class="row">
-                    <div class="col">
-                        <h2>PM 2.5 Detector</h2>
-                        <div class="project-link-group" id="project-link">
-                            <a class="github-project-link" href="https://github.com/davidyen-888/PM2.5-Detector"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                        <p>
-                            An <b>Android application</b> connected with Arduino air quality sensor(PMS3003) by
-                            bluetooth module.
-                        </p>
-                        <p>
-                            Users can detect the PM 2.5 level of the their environment without connecting
-                            to the Internet.
-                        </p>
-                        <p id="skillset">
-                            <span>Java</span>
-                            <span>Arduino</span>
-                            <span>Android Studio</span>
-                            <span>Blender</span>
-                        </p>
-                    </div>
+        <div class="projects-content row">
+            <div class="projects-content-left">
+                <h2>PM 2.5 Detector</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="github-project-link" href="https://github.com/davidyen-888/PM2.5-Detector"><i
+                            class="fab fa-github"></i></a>
                 </div>
+                <p>
+                    An <b>Android application</b> connected with Arduino air quality sensor(PMS3003) by
+                    bluetooth module.
+                </p>
+                <p>
+                    Users can detect the PM 2.5 level of the their environment without connecting
+                    to the Internet.
+                </p>
+                <p id="skillset">
+                    <span>Java</span>
+                    <span>Arduino</span>
+                    <span>Android Studio</span>
+                    <span>Blender</span>
+                </p>
             </div>
-            <div class="col-6 order-2 projects-content-right">
+            <div class="projects-content-right">
                 <img class="pm25-picture" src="images/pm2.5.jpg" alt="">
             </div>
         </div>
-        <div class="projects-content row align-items-center">
-            <div class="col-6 order-2 projects-content-right">
-                <div class="row">
-                    <div class="col">
-                        <h2>Percolation</h2>
-                        <div class="project-link-group" id="project-link">
-                            <a class="github-project-link"
-                                href="https://github.com/davidyen-888/UCB-CS61B/tree/master/hw2"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                        <p>
-                            A percolation system model implemented with <b>Disjoint Sets</b> data structure and
-                            calculate Monte
-                            Carlo simulation to estimate the percolation threshold.
-                        </p>
-                        <p>
-                            With input files or mouse clicking, the visualizer can animates the results of opening sites
-                            in a percolation system.
-                        </p>
-                        <p id="skillset">
-                            <span>Java</span>
-                            <span>Disjoint Set</span>
-                            <span>Monte Carlo Simulation</span>
-                        </p>
-                    </div>
+        <div class="projects-content row">
+            <div class="projects-content-right">
+                <h2>Percolation</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="github-project-link" href="https://github.com/davidyen-888/UCB-CS61B/tree/master/hw2"><i
+                            class="fab fa-github"></i></a>
                 </div>
+                <p>
+                    A percolation system model implemented with <b>Disjoint Sets</b> data structure and
+                    calculate Monte
+                    Carlo simulation to estimate the percolation threshold.
+                </p>
+                <p>
+                    With input files or mouse clicking, the visualizer can animates the results of opening sites
+                    in a percolation system.
+                </p>
+                <p id="skillset">
+                    <span>Java</span>
+                    <span>Disjoint Set</span>
+                    <span>Monte Carlo Simulation</span>
+                </p>
             </div>
-            <div class="col-6 order-1 projects-content-left">
+            <div class="projects-content-left">
                 <div id="percolation-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -276,29 +260,25 @@
                 </div>
             </div>
         </div>
-        <div class="projects-content row align-items-center">
-            <div class="col-6 order-1 projects-content-left">
-                <div class="row">
-                    <div class="col">
-                        <h2>Weather Bot</h2>
-                        <div class="project-link-group" id="project-link">
-                            <a class="github-project-link" href="https://github.com/davidyen-888/Discord-Weather-Bot"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                        <p>
-                            An online discord bot coded with Python and hosted on Heroku. Respond to user's
-                            concurrent weather, anytime, anywhere using OpenWeatherMap API.
-                        </p>
-                        <p id="skillset">
-                            <span>Python</span>
-                            <span>Discord API</span>
-                            <span>OpenWeatherMap API</span>
-                            <span>Heroku</span>
-                        </p>
-                    </div>
+        <div class="projects-content row">
+            <div class="projects-content-left">
+                <h2>Weather Bot</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="github-project-link" href="https://github.com/davidyen-888/Discord-Weather-Bot"><i
+                            class="fab fa-github"></i></a>
                 </div>
+                <p>
+                    An online discord bot coded with Python and hosted on Heroku. Respond to user's
+                    concurrent weather, anytime, anywhere using OpenWeatherMap API.
+                </p>
+                <p id="skillset">
+                    <span>Python</span>
+                    <span>Discord API</span>
+                    <span>OpenWeatherMap API</span>
+                    <span>Heroku</span>
+                </p>
             </div>
-            <div class="col-6 order-2 projects-content-right">
+            <div class="projects-content-right">
                 <img class="bot-picture"
                     src="https://user-images.githubusercontent.com/61106644/124215941-a433d580-db27-11eb-9bdc-87e112f429bc.gif"
                     alt="">

@@ -1,11 +1,13 @@
 html {
     /* safari unsupported */
-    scroll-behavior: smooth 
+    scroll-behavior: smooth
 }
 
 body {
     font-family: "Nunito", sans-serif;
     background-color: #ffe2bd21;
+    display: flexbox;
+    margin: 0;
 }
 
 a {
@@ -42,15 +44,14 @@ a:hover {
     cursor: pointer;
 }
 
-.home-container {
-    height: 800px;
+#home {
+    min-height: 100vh;
     background-color: #0f1b35;
-    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
 .home-container p {
@@ -119,15 +120,22 @@ a:hover {
     font-weight: 900;
 }
 
-.about-content {
+.about-content, .projects-content {
     margin: 4% 10% 4% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.about-content-left {
-    text-align: start;
+.about-content-left, .projects-content-left, .about-content-right, .projects-content-right {
+    text-align: center;
     font-size: 1.2rem;
     padding: 30px 50px;
     line-height: 2.5rem;
+}
+
+.about-content-left{
+    text-align: start;
 }
 
 #intro-btn {
@@ -157,14 +165,11 @@ a:hover {
     padding: 20px;
 }
 
-.about-content-right {
-    text-align: center;
-    padding: 2rem;
-    line-height: 2.5rem;
-}
-
-.projects-content {
-    margin: 8% 10% 0 10%;
+.about-picture {
+    max-width: 350px;
+    min-width: 50%;
+    border-radius: 50%;
+    box-shadow: #346346b4 0px 3px 10px 3px;
 }
 
 .projects-content h2 {
@@ -194,13 +199,6 @@ a:hover {
     font-size: 1.3rem;
 }
 
-.about-picture {
-    max-width: 350px;
-    min-width: 50%;
-    border-radius: 50%;
-    box-shadow: #346346b4 0px 3px 10px 3px;
-}
-
 .pm25-picture, .bot-picture {
     max-width: 100%;
 }
@@ -213,4 +211,10 @@ a:hover {
     font-size: 2rem;
     color: #0f1b35;
     ;
+}
+
+@media screen and (max-width: 767px) {
+    .about-content, .projects-content {
+        margin: 0%;
+    }
 }
