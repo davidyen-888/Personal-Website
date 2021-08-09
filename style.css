@@ -160,7 +160,6 @@ a:hover {
     padding: 20px;
     border-radius: 50px;
     border: 0px;
-    width: 60%;
 }
 
 #skills{
@@ -218,7 +217,7 @@ a:hover {
     font-size: 1.3rem;
 }
 
-.pm25-picture, .bot-picture {
+.carousel, .pm25-picture, .bot-picture {
     max-width: 100%;
 }
 
@@ -235,5 +234,11 @@ a:hover {
 @media screen and (max-width: 767px) {
     .home-container p {
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        font-size: larger;
     }
 }
