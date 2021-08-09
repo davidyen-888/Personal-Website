@@ -6,7 +6,6 @@ html {
 body {
     font-family: "Nunito", sans-serif;
     background-color: #ffe2bd21;
-    display: flexbox;
     margin: 0;
 }
 
@@ -127,7 +126,7 @@ a:hover {
     justify-content: space-around;
 }
 
-.about-content-left, .projects-content {
+.about-content-left, #projects-description {
     text-align: start;
     line-height: 2.5rem;
     justify-content: center;
@@ -167,11 +166,18 @@ a:hover {
     font-size: 1.5rem;
 }
 
-.about-content-right {
+.about-content-right{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#projects-image {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    justify-content: space-around ;
 }
 
 .about-picture {
@@ -217,7 +223,7 @@ a:hover {
     font-size: 1.3rem;
 }
 
-.carousel, .pm25-picture, .bot-picture {
+.pm25-picture, .bot-picture {
     max-width: 100%;
 }
 
@@ -237,8 +243,3 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 992px) {
-    body{
-        font-size: larger;
-    }
-}
