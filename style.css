@@ -206,6 +206,7 @@ a:hover {
 
 #skillset span {
     margin: 0.2rem;
+    text-shadow: rgba(255, 123, 123, 0.89) 0px 5px 10px;
 }
 
 .project-link-group {
