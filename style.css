@@ -47,7 +47,7 @@ body {
 
 /* moveIn */
 
-.welcome header {
+.welcome nav {
     opacity: 0;
     animation: moveIn 2s 3.1s ease forwards;
 }
