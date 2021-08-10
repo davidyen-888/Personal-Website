@@ -163,6 +163,7 @@ a:hover {
 
 #mainNavbar {
     background-color: #0c152973;
+    padding-left: 2%;
 }
 
 #mainNavbar .nav-link {
