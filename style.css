@@ -9,7 +9,10 @@ body {
     margin: 0;
 }
 
-/* start welcome animation */
+/*  start welcome animation 
+Author: Hitesh Sahu
+Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
+
 
 .welcome {
     overflow: hidden;
@@ -32,7 +35,7 @@ body {
 }
 
 .welcome #welcome {
-    background: #311b92;
+    background: #0f1b35;
     width: 56px;
     height: 56px;
     position: absolute;
@@ -101,7 +104,7 @@ body {
 
 @keyframes moveUp {
     0% {
-        background: #311b92;
+        background: #0f1b35;
         top: 100%;
     }
     50% {
