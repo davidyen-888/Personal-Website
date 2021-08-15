@@ -307,6 +307,7 @@ a:hover {
     padding: 20px;
     border-radius: 50px;
     border: 0px;
+    text-align: start;
 }
 
 #skills {
@@ -341,9 +342,7 @@ a:hover {
 }
 
 .projects-content .project-intro {
-    background-color: #f5ebdf83;
-    padding: 2rem;
-    border-radius: 50px;
+    text-align: center;
 }
 
 #skillset {
