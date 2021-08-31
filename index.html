@@ -5,6 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="David Hsieh's personal website.">
+    <meta name="author" content="David Hsieh">
+    <meta name="keywords" content="David, Web, Web Design, Frontend, HTML5, JavaScript, CSS3">
 
     <!-- og: tags for Open Graph Protocol -->
     <meta property='og:title' content='David Hsieh' />
@@ -21,7 +25,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>David Hsieh</title>
     <link rel="icon" href="images/internet.png">
@@ -43,16 +46,16 @@
                 <div class="collapse navbar-collapse" id="navLinks">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">HOME</a>
+                            <a data-scroll href="#home" class="nav-link">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">ABOUT</a>
+                            <a data-scroll href="#about" class="nav-link">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#projects" class="nav-link">PROJECTS</a>
+                            <a data-scroll href="#projects" class="nav-link">PROJECTS</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">CONTACT</a>
+                            <a data-scroll href="#contact" class="nav-link">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +66,7 @@
                 <p>I<span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
             </div>
             <div>
-                <a href="#about" class="scroll-down"></a>
+                <a data-scroll href="#about" class="scroll-down"></a>
             </div>
         </div>
 
@@ -162,8 +165,10 @@
                     <div class="collapse" id="bearmap-intro">
                         <div class="card card-body">
                             <p>
-                                A web application that resembles the features of Google Map including <b> rastering</b> ,
-                                <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and <b>navigation
+                                A web application that resembles the features of Google Map including <b> rastering</b>
+                                ,
+                                <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and
+                                <b>navigation
                                     direction</b> functions.
                             </p>
                             <p>
@@ -231,7 +236,8 @@
                                 calculate Monte Carlo simulation to estimate the percolation threshold.
                             </p>
                             <p>
-                                With input files or mouse clicking, the visualizer can animates the results of opening sites
+                                With input files or mouse clicking, the visualizer can animates the results of opening
+                                sites
                                 in a percolation system.
                             </p>
                         </div>
@@ -247,19 +253,24 @@
                 <div id="percolation-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <video class="d-block w-100" src="images/demo/interactive.mp4" alt="First slide"  muted autoplay playsinline>
+                            <video class="d-block w-100" src="images/demo/interactive.mp4" alt="First slide" muted
+                                autoplay playsinline>
                         </div>
                         <div class="carousel-item">
-                            <video class="d-block w-100" src="images/demo/jerry47.mp4" alt="Second slide" muted autoplay playsinline>
+                            <video class="d-block w-100" src="images/demo/jerry47.mp4" alt="Second slide" muted autoplay
+                                playsinline>
                         </div>
                         <div class="carousel-item">
-                            <video class="d-block w-100" src="images/demo/input20.mp4" alt="Third slide" muted autoplay playsinline>
+                            <video class="d-block w-100" src="images/demo/input20.mp4" alt="Third slide" muted autoplay
+                                playsinline>
                         </div>
                         <div class="carousel-item">
-                            <video class="d-block w-100" src="images/demo/heart25.mp4" alt="Forth slide" muted autoplay playsinline>
+                            <video class="d-block w-100" src="images/demo/heart25.mp4" alt="Forth slide" muted autoplay
+                                playsinline>
                         </div>
                         <div class="carousel-item">
-                            <video class="d-block w-100" src="images/demo/michael61.mp4" alt="Fifth slide" muted autoplay playsinline>
+                            <video class="d-block w-100" src="images/demo/michael61.mp4" alt="Fifth slide" muted
+                                autoplay playsinline>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#percolation-carousel" role="button" data-slide="prev">
@@ -344,9 +355,7 @@
                 </div>
             </div>
             <div class="col" id="projects-image">
-                <video class="bot-picture"
-                    src="images/demo/bot.mp4"
-                    alt="" muted autoplay playsinline>
+                <video class="bot-picture" src="images/demo/bot.mp4" alt="" muted autoplay playsinline>
             </div>
         </div>
     </section>
