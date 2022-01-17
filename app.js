@@ -40,3 +40,19 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => { // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+// for top button
+let topbtn = document.getElementById("to-top-button");
+
+document.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 300) {
+    topbtn.classList.add("show");
+  } else {
+    topbtn.classList.remove("show");
+  }
+});
+
+document.getElementById("to-top-button").addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
+}
+);

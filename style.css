@@ -59,6 +59,7 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
         width: 0px;
         height: 0px;
     }
+
     100% {
         width: 56px;
         height: 56px;
@@ -73,6 +74,7 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
         height: 0px;
         padding: 0px;
     }
+
     100% {
         top: 50%;
         height: 100%;
@@ -84,6 +86,7 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     0% {
         border-radius: 50%;
     }
+
     100% {
         border-radius: 0px;
     }
@@ -93,9 +96,11 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     0% {
         top: 50%;
     }
+
     50% {
         top: 40%;
     }
+
     100% {
         top: 100%;
     }
@@ -106,9 +111,11 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
         background: #0f1b35;
         top: 100%;
     }
+
     50% {
         top: 40%;
     }
+
     100% {
         top: 50%;
         background: #039be5;
@@ -119,10 +126,12 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     0% {
         background: #039be5;
     }
+
     50% {
         background: #039be5;
         top: 26px;
     }
+
     100% {
         background: #0f1b35;
         width: 100%;
@@ -136,6 +145,7 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -145,6 +155,7 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -202,38 +213,30 @@ a:hover {
 }
 
 .scroll-down {
-    opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
     position: absolute;
-    bottom: 30px;
     left: 50%;
-    margin-left: -16px;
-    display: block;
-    width: 32px;
-    height: 32px;
-    border: 2px solid #FFF;
-    background-size: 14px auto;
-    border-radius: 50%;
+    bottom: 2%;
+    transition: background-color .3s, opacity .5s, visibility .5s;
     z-index: 2;
     -webkit-animation: bounce 2s infinite 2s;
     animation: bounce 2s infinite 2s;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    transform: scale(1)
 }
 
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
+.scroll-down:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 50px;
+    color: #fff;
 }
 
 @keyframes bounce {
@@ -242,11 +245,13 @@ a:hover {
         -ms-transform: translateY(0);
         transform: translateY(0);
     }
+
     40% {
         -webkit-transform: translateY(-10px);
         -ms-transform: translateY(-10px);
         transform: translateY(-10px);
     }
+
     60% {
         -webkit-transform: translateY(-5px);
         -ms-transform: translateY(-5px);
@@ -391,10 +396,51 @@ a:hover {
     .home-container p {
         font-size: 2rem;
     }
+
     .about-content-left {
         text-align: center;
     }
+
     .about-picture {
         max-width: 200px;
     }
+}
+
+#to-top-button {
+    display: inline-block;
+    background-color: #0f1b35;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#to-top-button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#to-top-button:hover {
+    cursor: pointer;
+    background-color: gold;
+}
+
+#to-top-button:active {
+    background-color: gold;
+}
+
+#to-top-button.show {
+    opacity: 1;
+    visibility: visible;
 }
