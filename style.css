@@ -378,7 +378,7 @@ a:hover {
     font-size: 1.3rem;
 }
 
-.pm25-picture, .bot-picture {
+.blur-picture, .pm25-picture, .bot-picture {
     max-width: 100%;
 }
 

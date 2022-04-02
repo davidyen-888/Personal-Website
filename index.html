@@ -218,6 +218,42 @@
 
         <div class="projects-content row">
             <div class="col" id="projects-description">
+                <h2>Blur The Background</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="github-project-link" href="https://github.com/davidyen-888/blur-the-background"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <div class="project-intro">
+                    <p>
+                        <a id="intro-btn" class="btn btn-secondary" data-toggle="collapse" href="#blur-intro"
+                            aria-expanded="false" aria-controls="collapse-intro">
+                            <strong>Introduction</strong>
+                        </a>
+                    </p>
+                    <div class="collapse" id="blur-intro">
+                        <div class="card card-body">
+                            <p>
+                                Built user background blur-effect in the real-time video processing by using the
+                                pre-trained Tensorflow.js models and drawing graphics with Canvas API in the static
+                                website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="skillset">
+                    <span>JavaScript</span>
+                    <span>Canvas API</span>
+                    <span>Tensorflow</span>
+                </div>
+            </div>
+            <div class="col" id="projects-image">
+                <video class="blur-picture" src="images/demo/blur.mp4" alt="" muted autoplay loop playsinline>
+            </div>
+        </div>
+
+
+        <div class="projects-content row">
+            <div class="col" id="projects-description">
                 <h2>Percolation</h2>
                 <div class="project-link-group" id="project-link">
                     <a class="github-project-link" href="https://github.com/davidyen-888/UCB-CS61B/tree/master/hw2"><i
@@ -259,18 +295,18 @@
                         </div>
                         <div class="carousel-item">
                             <video class="d-block w-100" src="images/demo/jerry47.mp4" alt="Second slide" muted autoplay
-                                playsinline>
+                                loop playsinline>
                         </div>
                         <div class="carousel-item">
                             <video class="d-block w-100" src="images/demo/input20.mp4" alt="Third slide" muted autoplay
-                                playsinline>
+                                loop playsinline>
                         </div>
                         <div class="carousel-item">
                             <video class="d-block w-100" src="images/demo/heart25.mp4" alt="Forth slide" muted autoplay
-                                playsinline>
+                                loop playsinline>
                         </div>
                         <div class="carousel-item">
-                            <video class="d-block w-100" src="images/demo/michael61.mp4" alt="Fifth slide" muted
+                            <video class="d-block w-100" src="images/demo/michael61.mp4" alt="Fifth slide" muted loop
                                 autoplay playsinline>
                         </div>
                     </div>
@@ -321,7 +357,7 @@
                 </div>
             </div>
             <div class="col" id="projects-image">
-                <img class="pm25-picture" src="images/pm2.5.jpg" alt="">
+                <img class="pm25-picture" src="images/pm2.5.jpg">
             </div>
         </div>
 
@@ -356,7 +392,7 @@
                 </div>
             </div>
             <div class="col" id="projects-image">
-                <video class="bot-picture" src="images/demo/bot.mp4" alt="" muted autoplay playsinline>
+                <video class="bot-picture" src="images/demo/bot.mp4" alt="" muted autoplay loop playsinline>
             </div>
         </div>
     </section>
@@ -393,10 +429,6 @@
     <script src="https://kit.fontawesome.com/ece26f3653.js" crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="app.js"></script>
-    <!-- Smooth-Scroll JS -->
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
 </body>
 
 </html>
