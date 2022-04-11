@@ -8,6 +8,7 @@ const newTextDelay = 1500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
+// for intro page
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
     if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
