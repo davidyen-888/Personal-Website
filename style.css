@@ -193,7 +193,6 @@ a:hover {
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #24ccf7;
     cursor: pointer;
-    font-size: x-large;
     transition: 400ms ease-in-out;
 }
 
@@ -201,6 +200,7 @@ a:hover {
     display: block;
     text-align: center;
     border: none;
+    color: white;
 }
 
 .dropdown-item {
