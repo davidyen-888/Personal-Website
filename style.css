@@ -192,8 +192,19 @@ a:hover {
 #mainNavbar .nav-link:hover {
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #24ccf7;
-    transform: translateY(-0.3rem);
     cursor: pointer;
+    font-size: x-large;
+    transition: 400ms ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    text-align: center;
+    border: none;
+}
+
+.dropdown-item {
+    text-align: center;
 }
 
 #home {
