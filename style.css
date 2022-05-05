@@ -172,6 +172,26 @@ a:hover {
 
 .navbar-brand {
     font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+.navbar-brand:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.navbar-brand:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #mainNavbar {
@@ -191,7 +211,7 @@ a:hover {
 
 #mainNavbar .nav-link:hover {
     color: white;
-    box-shadow: 0 0.5em 0.5em -0.4em #24ccf7;
+    box-shadow: 0 0.5em 0.5em -0.4em #0087ca;
     cursor: pointer;
     transition: 400ms ease-in-out;
 }
