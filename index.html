@@ -58,7 +58,7 @@
                         <li class="nav-item">
                             <a data-scroll href="#contact" class="nav-link">CONTACT</a>
                         </li>
-                        <li class="dropdown show">
+                        <!-- <li class="dropdown show">
                             <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 MY STUDY NOTES
@@ -77,7 +77,7 @@
                                     href="https://davidhsieh.notion.site/Papers-88540019cfa04d228c911da92499087d">Course
                                     Papers</a>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -141,18 +141,33 @@
                                 <strong>Programming Languages</strong>
                                 <br>
                                 <em>
-                                    Python, Golang, Java, JavaScript, C++, Haskell, PHP
+                                    JavaScript/TypeScript, Python, Go, Java, C++, Haskell, PHP, SQL </em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Web General</strong>
+                                <br>
+                                <em>
+                                    React, Next.js, Node.js, Chakra UI, jQuery, BootStrap, HTML/CSS, Express
                                 </em>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <strong>Technologies, Tools and OS</strong>
+                                <strong>Database</strong>
                                 <br>
                                 <em>
-                                    HTML, CSS, BootStrap, Node.js, React.js, jQuery, MySQL, Markdown, JSON, TCP/HTTP,
-                                    NumPy, Tensorflow, JUnit, VSCode, IntelliJ, Heroku, Git, Docker, Android Studio,
-                                    MacOS, Windows, Linux Ubuntu
+                                    Firebase, MySQL, MongoDB
+                                </em>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>Tool</strong>
+                                <br>
+                                <em>
+                                    Git, Shell, Linux, Docker, CI/CD, LaTeX, Markdown, Figma
                                 </em>
                             </p>
                         </li>
@@ -168,6 +183,70 @@
     <!-- Projects -->
     <section id="projects" class="section-content">
         <h1>PROJECTS</h1>
+        <div class="projects-content row">
+            <div class="col" id="projects-description">
+                <h2>Amotions</h2>
+                <div class="project-link-group" id="project-link">
+                    <a class="external-project-link" href="https://amotionsapp.com/"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-intro">
+                    <p>
+                        <a id="intro-btn" class="btn btn-secondary" data-toggle="collapse" href="#amotions-intro"
+                            aria-expanded="false" aria-controls="collapse-intro">
+                            <strong>Introduction</strong>
+                        </a>
+                    </p>
+                    <div class="collapse" id="amotions-intro">
+                        <div class="card card-body">
+                            <ul>
+                                <li>
+                                    <p>
+                                        Full-stack development on a standalone app with 15+ features including
+                                        personalized, daily-updated and subscription tier-based contents with 100+
+                                        practices, assessments and video libraries based on users' interest.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Led the early-stage engineering team of 8 interns to develop an interactive
+                                        soft-skill training portal and landing page for a startup company.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="skillset">
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Chakra UI</span>
+                    <span>Firebase</span>
+                </div>
+            </div>
+
+            <div class="col" id="projects-image">
+                <div id="amotions-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/amotions1.svg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/amotions2.svg" alt="Second slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#amotions-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#amotions-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="projects-content row">
             <div class="col" id="projects-description">
                 <h2>BearMaps</h2>
@@ -186,18 +265,25 @@
                     </p>
                     <div class="collapse" id="bearmap-intro">
                         <div class="card card-body">
-                            <p>
-                                A web application that resembles the features of Google Map including <b> rastering</b>
-                                ,
-                                <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and
-                                <b>navigation
-                                    direction</b> functions.
-                            </p>
-                            <p>
-                                Implemented all the backend algorithms by Java with front end code and
-                                map data from
-                                <a href="https://www.openstreetmap.org/">OpenStreetMap</a> provided as a base.
-                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        A web application that resembles the features of Google Map including <b>
+                                            rastering</b>
+                                        ,
+                                        <b>routing</b>(finding the shortest path), <b>autocomplete searching</b> and
+                                        <b>navigation
+                                            direction</b> functions.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Implemented all the backend algorithms by Java with front end code and
+                                        map data from
+                                        <a href="https://www.openstreetmap.org/">OpenStreetMap</a> provided as a base.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -315,7 +401,7 @@
                 <div class="project-link-group" id="project-link">
                     <a class="github-project-link" href="https://github.com/davidyen-888/blur-the-background"><i
                             class="fab fa-github"></i></a>
-                    <a class="external-project-link" href="https://davidyen-888.github.io/blur-the-background/"><i
+                    <a class="external-project-link" href="https://davidyen-8 r r88.github.io/blur-the-background/"><i
                             class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="project-intro">
@@ -363,15 +449,23 @@
                     </p>
                     <div class="collapse" id="percolation-intro">
                         <div class="card card-body">
-                            <p>
-                                A percolation system model implemented with <b>Disjoint Sets</b> data structure and
-                                calculate Monte Carlo simulation to estimate the percolation threshold.
-                            </p>
-                            <p>
-                                With input files or mouse clicking, the visualizer can animates the results of opening
-                                sites
-                                in a percolation system.
-                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        A percolation system model implemented with <b>Disjoint Sets</b> data structure
+                                        and
+                                        calculate Monte Carlo simulation to estimate the percolation threshold.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        With input files or mouse clicking, the visualizer can animates the results of
+                                        opening
+                                        sites
+                                        in a percolation system.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -435,14 +529,21 @@
                     </p>
                     <div class="collapse" id="airbox-intro">
                         <div class="card card-body">
-                            <p>
-                                An <b>Android application</b> connected with Arduino air quality sensor(PMS3003) by
-                                bluetooth module.
-                            </p>
-                            <p>
-                                Users can detect the PM 2.5 level of the their environment without connecting
-                                to the Internet.
-                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        An <b>Android application</b> connected with Arduino air quality sensor(PMS3003)
+                                        by
+                                        bluetooth module.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Users can detect the PM 2.5 level of the their environment without connecting
+                                        to the Internet.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -500,9 +601,8 @@
             <a class="footer-link" href="https://github.com/davidyen-888"><i class="fab fa-github-square"></i></a>
             <a class="footer-link" href="https://www.linkedin.com/in/david-hsieh-yen/"><i
                     class="fab fa-linkedin link"></i></a>
-            <a class="footer-link" href="mailto:syhsieh@ucsd.edu"><i class="fas fa-envelope-square"></i></a>
-            <a class="footer-link"
-                href="https://docs.google.com/document/d/16E9r3eMj0N07ckkRNs-d7-IfhFb5wc3l1o0ZqCB3Vuo/preview"><i
+            <a class="footer-link" href="mailto:sydv8850@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            <a class="footer-link" href="https://www.overleaf.com/project/62784d3d7e91100254f9ad25"><i
                     class="fas fa-address-card"></i></a>
             <p class="footer-links">©
                 <script>document.write(new Date().getFullYear());</script>
