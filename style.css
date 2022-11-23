@@ -13,7 +13,7 @@ body {
 Author: Hitesh Sahu
 Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
 
-.welcome {
+/* .welcome {
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
 }
@@ -45,10 +45,10 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     transform: translate(-50%, -50%);
     border-radius: 50%;
     animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
-}
+} */
 
 /* moveIn */
-.welcome nav {
+/* .welcome nav {
     opacity: 0;
     animation: moveIn 2s 3.1s ease forwards;
 }
@@ -158,7 +158,7 @@ Source: https://codepen.io/hiteshsahu/pen/MOgzej  */
     100% {
         opacity: 0;
     }
-}
+} */
 
 a {
     color: rgb(12, 92, 197)
