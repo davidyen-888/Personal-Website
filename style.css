@@ -248,7 +248,7 @@ a:hover {
     font-weight: bold;
 }
 /* bubble effect */
-.bubbles img {
+/* .bubbles img {
     width: 30px;
     animation: bubbles 7s linear infinite;
 }
@@ -301,7 +301,7 @@ a:hover {
 
 .bubbles img:nth-child(3=6) {
     animation-delay: 2s;
-}
+} */
 
 .scroll-down {
     display: flex;
