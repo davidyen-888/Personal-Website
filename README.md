@@ -1,1 +1,2 @@
-Check out my new website on https://davidyen-888.github.io
+### This page will not be updated in the future.
+### Check out my new website on https://syhsieh.com/
